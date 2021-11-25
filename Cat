@@ -1,0 +1,13 @@
+public class Cat extends Animal{
+    int run = getRun(200);
+    public void runMeth(String name,int x){
+        if(x>run){
+            System.out.println(name +" столько не пробежит, у него сил всего на " + run+" метров(метра)");
+        }else if( x<=run){
+            System.out.println(name +" пробежал " + x+" метров и еще осталось сил на "+ (run-x)+ " метров(метра)");
+        }
+    }
+  public void swimMeth(String name,int y) {
+       System.out.println( name + " не умеет  плавать");
+   }
+}
