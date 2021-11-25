@@ -1,0 +1,17 @@
+public class Dog extends Animal{
+    int run = getRun(500);
+    int swim = getSwim(10);
+    public void runMeth(String name,int x){
+        if(x>run){
+            System.out.println(name+ " столько не пробежит, у него сил всего на " + run+" метров(метра)");
+        }else if( x<=run){
+            System.out.println(name+" пробежал " + x+" метров и еще осталось сил на "+ (run-x)+ " метров(метра)");
+        }
+    }
+    public void swimMeth(String name,int y){
+        if(y>swim){
+            System.out.println(name +" столько не проплывет, у него сил всего на " + swim +" метров(метра)");
+        }else if( y<=swim){
+            System.out.println(name +" пробежал " + y+" метров и еще осталось сил на "+ (swim-y)+ " метров(метра)");
+        }
+    }
